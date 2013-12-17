@@ -7,9 +7,9 @@ node "byron-pc.home" {
 		ensure	=> present
 	}
 	
-		package { 'notepadplusplus.install':
+	$packages = ['notepadplusplus.install','cwrsync']
+	package { $packages:
         ensure          => installed,
         provider        => 'chocolatey',
-        install_options => '-pre'
     }	
 }
