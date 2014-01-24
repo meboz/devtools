@@ -1,0 +1,48 @@
+{
+  "name": "example42-postgresql",
+  "version": "2.0.11",
+  "summary": "Puppet module for postgresql",
+  "author": "Alessandro Franceschi",
+  "description": "This module installs and manages postgresql. Check README.rdoc for details. Puppi is required for some common functions: you can install them without using the whole module. Monitor and firewall dependencies are needed only if the relevant features are enabled",
+  "dependencies": [
+    {
+      "name": "example42/puppi",
+      "version_requirement": ">=2.0.0"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=4.1.0"
+    },
+    {
+      "name": "puppetlabs/concat",
+      "version_requirement": ">=1.0.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "LICENSE": "a300b604c66de62cf6e923cca89c9d83",
+    "Modulefile": "bf57d733e601fc872a4f44325b79b178",
+    "README.md": "282dfa3a31b0ec119fe13319fb6d0d3f",
+    "Rakefile": "e90d68823ff237c89224eb139f8926ad",
+    "manifests/dbcreate.pp": "1780bd9fb771d844dd76823635074a83",
+    "manifests/hba.pp": "8d9259acdd5e6f2a52409992089cd93e",
+    "manifests/hbaconcat.pp": "fa3298a9ec96e3b4c69af5e34b57c009",
+    "manifests/import.pp": "1285ecdc5231b150aa5a83142c15c1fd",
+    "manifests/init.pp": "0a69fa412d264d6444a271f79e6f1350",
+    "manifests/params.pp": "00ece7859b345bccd957a80a03f72686",
+    "manifests/prerequisites.pp": "b636fd5185fda408db4ef7fae0d3da2c",
+    "manifests/redhat.pp": "1a99e7e4f2a76a4e0e7438a88700405b",
+    "manifests/spec.pp": "f3f6387e883626486466579f5754aad9",
+    "spec/classes/postgresql_spec.rb": "ea7d80e55190a506b6f1aba9f71431f2",
+    "spec/defines/postgresql_hba_spec.rb": "110e4824498776ff97cac5318fc5671d",
+    "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+    "templates/concat_hba_footer.erb": "12478fcdbf5366a37e6f67860599e726",
+    "templates/concat_hba_header.erb": "1e23683f4a710f2c0cdc97289923cd63",
+    "templates/spec.erb": "055d4f22a02a677753cf922108b6e50c"
+  },
+  "source": "https://github.com/example42/puppet-postgresql",
+  "project_page": "http://www.example42.com",
+  "license": "Apache2"
+}

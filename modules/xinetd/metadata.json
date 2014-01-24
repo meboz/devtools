@@ -1,0 +1,31 @@
+{
+  "name": "example42-xinetd",
+  "version": "2.0.8",
+  "summary": "Puppet module for xinetd",
+  "author": "Alessandro Franceschi",
+  "description": "This module installs and manages xinetd. Check README.rdoc for details. Puppi is required for some common functions: you can install them without using the whole module. Monitor and firewall dependencies are needed only if the relevant features are enabled",
+  "dependencies": [
+    {
+      "name": "example42/puppi",
+      "version_requirement": ">=2.0.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "LICENSE": "a300b604c66de62cf6e923cca89c9d83",
+    "Modulefile": "20ae7e2002795c9155d67e5400fc6f25",
+    "README.md": "59c1542fb4f3c08b275df8b40499043a",
+    "Rakefile": "e90d68823ff237c89224eb139f8926ad",
+    "manifests/init.pp": "1e42efe74cdb04594e51c72b4bb5c683",
+    "manifests/params.pp": "a08ced5b7ea40b22d0972a15d6cc2e3b",
+    "manifests/spec.pp": "774c986423dbeeb9aeaed699fd6e2b21",
+    "spec/classes/xinetd_spec.rb": "92de0ed32f2302bdf5a56d425cc6144e",
+    "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+    "templates/spec.erb": "055d4f22a02a677753cf922108b6e50c"
+  },
+  "source": "https://github.com/example42/puppet-xinetd",
+  "project_page": "http://www.example42.com",
+  "license": "Apache2"
+}

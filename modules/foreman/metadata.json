@@ -1,0 +1,79 @@
+{
+  "name": "example42-foreman",
+  "version": "2.0.11",
+  "summary": "Puppet module for foreman",
+  "author": "Alessandro Franceschi",
+  "description": "This module installs and manages foreman. Check README.rdoc for details. Puppi is required for some common functions: you can install them without using the whole module. Monitor and firewall dependencies are needed only if the relevant features are enabled",
+  "dependencies": [
+    {
+      "name": "example42/puppi",
+      "version_requirement": ">=2.0.0"
+    },
+    {
+      "name": "example42/mysql",
+      "version_requirement": ">=2.0.0"
+    },
+    {
+      "name": "example42/postgresql",
+      "version_requirement": ">=2.0.0"
+    },
+    {
+      "name": "example42/apache",
+      "version_requirement": ">=2.0.0"
+    },
+    {
+      "name": "example42/tftp",
+      "version_requirement": ">=2.0.6"
+    },
+    {
+      "name": "example42/dhcpd",
+      "version_requirement": ">=2.0.10"
+    },
+    {
+      "name": "example42/sudo",
+      "version_requirement": ">=2.0.8"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "LICENSE": "a300b604c66de62cf6e923cca89c9d83",
+    "Modulefile": "f06019f1ef80a95e69b8d42346a981ac",
+    "README.md": "9b29e41a782abc6438d4559de221d7d2",
+    "Rakefile": "e90d68823ff237c89224eb139f8926ad",
+    "manifests/init.pp": "6d885e16c14b9a204de5653930c3d9c8",
+    "manifests/mysql.pp": "1acc1662aaa96d4f11111953dfe98414",
+    "manifests/params.pp": "af393903643fa9638dfc129132a41f04",
+    "manifests/passenger.pp": "25a42f76362f94596a15d7887a288fb2",
+    "manifests/postgresql.pp": "86bea6cd0a5994603eed1fcc34ab8e40",
+    "manifests/proxy/dhcp.pp": "901238894df92987b814667e2dd206a2",
+    "manifests/proxy/puppetca.pp": "3218bb8ecdcf4bcf179e57d1396ecaa5",
+    "manifests/proxy/tftp.pp": "67c25a5caaae4a730a062704a6d2aa0a",
+    "manifests/proxy.pp": "30dfc22dacde5bd9aa670c86291c1561",
+    "manifests/puppetmaster.pp": "d5feecc480aa34ae8e3c474b6268b40f",
+    "manifests/repository.pp": "7675231607c0f1717da460f285ecbd37",
+    "manifests/server.pp": "0593f9f3e5fa7a10666639ca20e98b6b",
+    "manifests/spec.pp": "cfa0da2ac7120b7b43dd0ff1c4c0b2c6",
+    "manifests/sqlite.pp": "c09008cedd7c050e58095089da57acc2",
+    "spec/classes/foreman_spec.rb": "881d7de69bcbe9b0dfdfc295d29fab63",
+    "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+    "templates/database.yml.erb": "35e21ff943f29f54015f0467f48e4eca",
+    "templates/external_node.rb.erb.ORIG": "eb36d8099644cfa9153c64c6df1774f7",
+    "templates/external_node_v1.rb.erb": "e14d4e1ed537a4b7dc33f9c1575b2c70",
+    "templates/external_node_v2.rb.erb": "034f156a60c708395ce05a09522cbd69",
+    "templates/foreman-passenger.conf.erb": "5e38eebc1d0ea86adff2b4ab29f6eb5e",
+    "templates/foreman-report_v1.rb.erb": "ef084639d8b8534f7342829053e6f69e",
+    "templates/foreman-report_v2.rb.erb": "e93e6e80538763e6bb88847fa8a1765b",
+    "templates/foreman.repo.erb": "6132041767e6ae4a4c2c16760f0f9913",
+    "templates/foreman.seeds.erb": "212d19258407236487ca2c46db957f98",
+    "templates/init_config.erb": "675b803a2d9a481f523e36e106a5a55d",
+    "templates/proxy-settings.yml.erb": "599fe43cbd29db52bf98921272314adf",
+    "templates/push_facts.rb.erb": "201ae25fa9442ee209fd49eaf8765334",
+    "templates/settings.yaml.erb": "661dbc5601e546fd5b90f76268fb9676",
+    "templates/spec.erb": "055d4f22a02a677753cf922108b6e50c"
+  },
+  "source": "https://github.com/example42/puppet-foreman",
+  "project_page": "http://www.example42.com",
+  "license": "Apache2"
+}
